@@ -7,8 +7,7 @@ int main() {
 	using std::endl;
 	cout << endl << "Finally, we're here!";
 	cout << endl << "Incredible skuka";
-	cout << endl << "Bohdan";
-	cout << endl << "Max";
+	cout << endl << "NOT ONLY A Max";
 	return EXIT_SUCCESS;
 }
 
