@@ -6,6 +6,6 @@ cmake_minimum_required (VERSION 3.8)
 project ("ModularSolution")
 
 # Добавьте источник в исполняемый файл этого проекта.
-add_executable (ModularSolution   "main.cpp" "main.h" "engine.cpp" "engine.h"  "entity.h")
+add_executable (ModularSolution   "main.cpp" "CEngine.cpp" "CEngine.h")
 
 # TODO: Добавьте тесты и целевые объекты, если это необходимо.
