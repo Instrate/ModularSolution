@@ -12,8 +12,15 @@ public:
 	// acceleration
 	std::vector <double>* acel = new std::vector <double>[dim];
 
+	void methodMove(long int tick);
 
-
+	void virtual methodLoad() {
+		for (int i = 0; i < dim; i++) {
+			pos[i] = 0;
+			*(vel + i) = 0;
+			*(acel + i) = 0;
+		}
+	}
 
 private:
 	// amount of countable dimensions
