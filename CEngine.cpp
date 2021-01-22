@@ -1,6 +1,6 @@
 #include "main.h"
 
-class Engine;
+#include "CEngine.h"
 
 int CEngine::testDebug() {
 	
@@ -11,7 +11,11 @@ int CEngine::load(bool debug) {
 	if (debug) {
 		std::cout << std::endl << std::endl << "-Loading in DEBUG-MODE";
 	}
-
+	
+	if (debug) {
+		std::cout << std::endl << "-Loading entities";
+	}
+	ent = new std::vector<CEntity>;
 
 	if (debug) {
 		std::cout << std::endl << "-Loading was successful";

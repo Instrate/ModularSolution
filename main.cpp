@@ -1,5 +1,7 @@
 #include "main.h"
 
+#include "CEngine.h"
+
 int main() {
 	CEngine *engine = new CEngine();
 	int load_code = engine->load(true);
@@ -12,6 +14,5 @@ int main() {
 	if (unload_code) {
 		return unload_code;
 	}
-	delete engine;
 	return EXIT_SUCCESS;
 }

@@ -4,26 +4,30 @@
 class CEntity {
 public:
 	// position
-	std::vector <double*> pos;
+	std::vector<double>* pos;
 	
 	// velocity
-	std::vector <double>* vel = new std::vector <double>[dim];
+	std::vector <double>* vel;
 
 	// acceleration
-	std::vector <double>* acel = new std::vector <double>[dim];
+	std::vector <double>* acel;
 
 	void methodMove(long int tick);
 
-	void virtual methodLoad() {
-		for (int i = 0; i < dim; i++) {
-			pos[i] = 0;
-			*(vel + i) = 0;
-			*(acel + i) = 0;
-		}
+	//loading parametres 
+	void virtual methodLoadDefaultParametres() {
+		pos = new std::vector<double>(dim, 0);
+		vel = new std::vector<double>(dim, 0);
+		acel = new std::vector<double>(dim, 0);
+	
 	}
+
+
+	CEntity();
 
 private:
 	// amount of countable dimensions
-	const short dim = 3;
+	const int dim = 3;
+
 
 };

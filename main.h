@@ -8,8 +8,3 @@
 #include <ctime>
 #include <vector>
 #include <cstdlib>
-
-// 
-
-#include "CEngine.h"
-#include "CEntity.h"
