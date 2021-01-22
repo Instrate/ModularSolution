@@ -12,3 +12,4 @@
 // 
 
 #include "engine.h"
+#include "entity.h"
