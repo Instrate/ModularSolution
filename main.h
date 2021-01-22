@@ -11,5 +11,5 @@
 
 // 
 
-#include "engine.h"
-#include "entity.h"
+#include "CEngine.h"
+#include "CEntity.h"
