@@ -1,7 +1,7 @@
 #include "main.h"
 
 int main() {
-	Engine *engine = new Engine();
+	CEngine *engine = new CEngine();
 	int load_code = engine->load(true);
 	if (load_code) {
 		return load_code;

@@ -1,10 +1,10 @@
 #pragma once
 #include "main.h"
 
-class Entity {
+class CEntity {
 public:
 	// position
-	std::vector <double>* pos = new std::vector <double>[dim];
+	std::vector <double*> pos;
 	
 	// velocity
 	std::vector <double>* vel = new std::vector <double>[dim];

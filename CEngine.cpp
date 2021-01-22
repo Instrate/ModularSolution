@@ -2,12 +2,12 @@
 
 class Engine;
 
-int Engine::testDebug() {
+int CEngine::testDebug() {
 	
 	return 0;
 }
 
-int Engine::load(bool debug) {
+int CEngine::load(bool debug) {
 	if (debug) {
 		std::cout << std::endl << std::endl << "-Loading in DEBUG-MODE";
 	}
@@ -19,7 +19,7 @@ int Engine::load(bool debug) {
 	return 0;
 }
 
-int Engine::unload() {
+int CEngine::unload() {
 
 	return 0;
 }

@@ -3,7 +3,7 @@
 const bool LOAD_ENGINE = true;
 const bool UNLOAD_ENGINE = false;
 
-class Engine {
+class CEngine {
 public:
 
 	int testDebug();
