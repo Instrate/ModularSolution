@@ -1,7 +1,5 @@
 #pragma once
 
-const int WIDTH = 100;
-
 class Engine {
 public:
 
